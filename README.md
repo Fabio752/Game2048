@@ -2,13 +2,21 @@
 2048 famous game reproduced with the chance to choose a initial configuration written in a txt file read by the program.
 If the input file can not be read by the program the game will start with the initial configuration:
 0 0 0 0
+
 0 0 0 0
+
+0 0 0 0
+
 0 0 0 2
 
 Moves allowed are :
+
 'a' : merging everything left
+
 's' : merging everything down
+
 'd' : merging everything right
+
 'w' : merging everything up
 
 
