@@ -1,10 +1,3 @@
-//
-//  main.cpp
-//  game2048
-//
-//  Created by fabio deo on 22/01/2018.
-//  Copyright © 2018 fabio deo. All rights reserved.
-//
 
 #include <iostream>
 #include <string>
