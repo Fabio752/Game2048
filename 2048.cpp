@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <string>
 #include <cmath>
@@ -234,33 +233,21 @@ bool checkpossiblemoves(std::vector<int> v, int ind){
         
     }
     //everything but the top row
-    if (ind > size){
+    if (ind >= size){
         
         if (v[ind] == v[ind-size])
             return false;
         
     }
-    //everything but the bottom row
-    if (ind < v.size() - size){
-        
-        if (v[ind] == v[ind + size])
-            return false;
-        
-    }
+   
     //everything but the left column
-        if (ind % size != 0 || ind != 0){
+        if ((ind % size) != 0){
             
             if (v[ind] == v[ind - 1])
                 return false;
             
+            
         }
-    //everything but the right column
-    if (ind % (size + 1) != 0){
-        
-        if (v[ind] == v[ind + 1])
-            return false;
-        
-    }
     
     return true;
 }
@@ -306,4 +293,5 @@ void random_place2(std::vector<int>& v){
     int randomindex = rand() % storingpositions.size();
     v[storingpositions[randomindex]] = 2;
 }
+
 
